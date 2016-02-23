@@ -14,6 +14,9 @@
 		403C34C11C7C0EE000DA58A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C34BF1C7C0EE000DA58A1 /* LaunchScreen.storyboard */; };
 		403C34CC1C7C0EE000DA58A1 /* GifControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C34CB1C7C0EE000DA58A1 /* GifControlTests.swift */; };
 		403C34D71C7C0EE000DA58A1 /* GifControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C34D61C7C0EE000DA58A1 /* GifControlUITests.swift */; };
+		403C34E61C7C115F00DA58A1 /* group2.png in Resources */ = {isa = PBXBuildFile; fileRef = 403C34E41C7C115F00DA58A1 /* group2.png */; };
+		403C34E71C7C115F00DA58A1 /* group1.png in Resources */ = {isa = PBXBuildFile; fileRef = 403C34E51C7C115F00DA58A1 /* group1.png */; };
+		403C34E91C7C117700DA58A1 /* MaskAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C34E81C7C117700DA58A1 /* MaskAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		403C34D21C7C0EE000DA58A1 /* GifControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		403C34D61C7C0EE000DA58A1 /* GifControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifControlUITests.swift; sourceTree = "<group>"; };
 		403C34D81C7C0EE000DA58A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403C34E41C7C115F00DA58A1 /* group2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group2.png; sourceTree = "<group>"; };
+		403C34E51C7C115F00DA58A1 /* group1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group1.png; sourceTree = "<group>"; };
+		403C34E81C7C117700DA58A1 /* MaskAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				403C34B61C7C0EE000DA58A1 /* AppDelegate.swift */,
 				403C34B81C7C0EE000DA58A1 /* ViewController.swift */,
+				403C34E81C7C117700DA58A1 /* MaskAnimation.swift */,
+				403C34E41C7C115F00DA58A1 /* group2.png */,
+				403C34E51C7C115F00DA58A1 /* group1.png */,
 				403C34BA1C7C0EE000DA58A1 /* Main.storyboard */,
 				403C34BD1C7C0EE000DA58A1 /* Assets.xcassets */,
 				403C34BF1C7C0EE000DA58A1 /* LaunchScreen.storyboard */,
@@ -229,9 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403C34E61C7C115F00DA58A1 /* group2.png in Resources */,
 				403C34C11C7C0EE000DA58A1 /* LaunchScreen.storyboard in Resources */,
 				403C34BE1C7C0EE000DA58A1 /* Assets.xcassets in Resources */,
 				403C34BC1C7C0EE000DA58A1 /* Main.storyboard in Resources */,
+				403C34E71C7C115F00DA58A1 /* group1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				403C34B91C7C0EE000DA58A1 /* ViewController.swift in Sources */,
+				403C34E91C7C117700DA58A1 /* MaskAnimation.swift in Sources */,
 				403C34B71C7C0EE000DA58A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
