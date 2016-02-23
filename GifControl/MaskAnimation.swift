@@ -13,6 +13,8 @@ class MaskAnimation: UIView {
     private let kImageViewWidth:CGFloat = 104.0
     private let kImageViewHeight:CGFloat = 157.0
     
+    private var isAnimating:Bool = false
+    
     let maskLayer = CAShapeLayer()
     
     let foregroundImageView = UIImageView(image: UIImage(named: "group2"))
@@ -34,6 +36,7 @@ class MaskAnimation: UIView {
     
     func startFillAnimation() {
         
+        isAnimating = true
         let fromPath = UIBezierPath(rect: self.bounds).CGPath
         let toPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: kImageViewWidth, height: 0))
         maskLayer.path = fromPath
@@ -48,13 +51,15 @@ class MaskAnimation: UIView {
     }
     
     func pauseFillAnimation() {
-        
+        isAnimating = false
         let pausedTime = maskLayer.convertTime(CACurrentMediaTime(), fromLayer: nil)
         maskLayer.speed = 0
         maskLayer.timeOffset = pausedTime
     }
     
     func resumeFillAnimation() {
+        if isAnimating {return}
+        isAnimating = true
         let pausedTime = maskLayer.timeOffset
         maskLayer.speed = 1.0
         maskLayer.timeOffset = 0
